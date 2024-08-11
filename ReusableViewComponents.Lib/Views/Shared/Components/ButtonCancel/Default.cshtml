@@ -1,0 +1,11 @@
+﻿@model ReusableViewComponents.Lib.Models.ButtonModel
+
+<button class="btn-sm btn-danger" onclick="showAlert('@Model.AlertMessage')">
+    @Model.ButtonText
+</button>
+
+<script>
+    function showAlert(message) {
+        alert(message);
+    }
+</script>
